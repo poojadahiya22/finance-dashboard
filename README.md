@@ -2,8 +2,8 @@
 
 A clean, interactive finance dashboard built with vanilla HTML, CSS, and JavaScript. No frameworks, no build tools — just open the file and it works.
 
-**Live Demo:** [link]  
-**Repository:** [link]
+**Live Demo:** https://poojadahiya22.github.io/finance-dashboard/
+**Repository:** https://github.com/poojadahiya22/finance-dashboard
 
 ---
 
