@@ -30,9 +30,9 @@ Built specifically for college students who manage pocket money, juggle educatio
 
 ## Screenshots
 
-|                      Dashboard                            |                          Spending Breakdown                  |
-|                     :---------:                           |                          :-----------------:                 |
-|https://github.com/user-attachments/assets/f37d642c-d90c-4748-b62f-5eaeec8fb6aa| https://github.com/user-attachments/assets/45d06c30-89df-44f1-83a4-718dace69410 |
+|          https://github.com/user-attachments/assets/fa003b05-2d3f-4800-bd47-30e82be9ad36              |
+|          https://github.com/user-attachments/assets/f1b4a023-6992-454a-b5dc-c4428fb513dd              |
+|          https://github.com/user-attachments/assets/287d7eaa-fcf5-4bbc-b15a-01d32b40bae8              |
 
 ## Core Features
 
