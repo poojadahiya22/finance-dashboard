@@ -1,116 +1,157 @@
-# FinFlow — Finance Dashboard
+<div align="center">
 
-A clean, interactive finance dashboard built with vanilla HTML, CSS, and JavaScript. No frameworks, no build tools — just open the file and it works.
+<img src="https://img.shields.io/badge/Status-In%20Development-1d9e75?style=flat-square" />
+<img src="https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Supabase-3b82f6?style=flat-square" />
+<img src="https://img.shields.io/badge/Target-Student%20Finance-emerald?style=flat-square" />
 
-**Live Demo:** https://poojadahiya22.github.io/finance-dashboard/
-**Repository:** https://github.com/poojadahiya22/finance-dashboard
+# P₹ PayFi
 
-![FinFlow Sample](sample.jpg)
+### Smart Finance App for Students
 
----
+> Track expenses. Build habits. Hit your goals. — Built for students who want to stop guessing where their money went.
 
-## What it does
+[Live Demo](will be updated soon) · [GitHub](https://github.com/poojadahiya22) · [Connect on LinkedIn](https://www.linkedin.com/in/pooja-dahiya-a04012297/)
 
-FinFlow lets you track income and expenses in one place. You can see your financial summary at a glance, explore transactions, and understand your spending patterns through the Insights section.
-
----
-
-## Features
-
-### Dashboard Overview
-- Summary cards showing total balance, income, and expenses with trend indicators
-- 6-month bar chart comparing income vs. expenses side by side
-- Donut chart breaking down spending by category
-- Recent transactions table with quick navigation
-
-### Transactions
-- Full transaction list with Date, Amount, Category, Description, and Type
-- Search by name or category (live filtering as you type)
-- Filter by type (income/expense) and category
-- Sort by date or amount (ascending/descending)
-- Add, edit, or delete transactions — all saved to localStorage
-
-### Role-Based UI (RBAC Simulation)
-- **Admin role:** Can add, edit, and delete transactions. All controls active.
-- **Viewer role:** Read-only mode. Add/Edit/Delete buttons are disabled and hidden. A banner clearly indicates the current access level.
-- Switch roles using the toggle in the sidebar — no page reload needed.
-
-### Insights & Analytics
-- Highest spending category with total amount
-- Month-over-month expense comparison (this month vs. last month)
-- Savings rate (%) based on total income vs. expenses
-- Average daily spend for the current month
-- Total transaction count breakdown
-- Largest single expense
-- Category breakdown table with percentage bars
-
-### UX & Extra Features
-- **Dark / Light mode** — toggle from the sidebar, preference saved to localStorage
-- **localStorage persistence** — all transactions survive page refresh
-- **Responsive layout** — works on mobile, tablet, and desktop
-- Smooth animations and hover states throughout
-- Keyboard shortcut: `Esc` to close modal, `Ctrl/Cmd + N` to open add transaction on Transactions page
-- Toast notifications for all user actions (add, edit, delete, validation errors)
-- Empty state handling for filtered views with no results
+</div>
 
 ---
 
-## How to run
+## What is PayFi?
 
-Just open `finance-dashboard.html` in any modern browser. No installation, no server, no npm.
+Most expense trackers are just digital notebooks. You log a transaction, forget about it, repeat.
+
+PayFi is different. It's built around **understanding** your money — not just recording it. It analyzes your spending patterns, predicts your next month's expenses, coaches you through financial habits, and gamifies the hard part: actually saving.
+
+Built specifically for college students who manage pocket money, juggle education costs, and are trying to build financial discipline for the first time.
+
+> 🚧 Currently in active development. The full mobile app is planned — this README documents the web platform in its current form.
+
+---
+
+## Core Features
+
+### Smart Dashboard
+A personalized financial overview that updates in real time. Income vs. expense analytics, goal progress, health score — all in one place.
 
 ```
-# Option 1 — direct
-Double-click finance-dashboard.html
-
-# Option 2 — local server (if you prefer)
-npx serve .
+Good morning, Pooja 👋
+This month: Spent ₹7,820 · Saved ₹4,580 · Health Score: 82/100
 ```
 
-That's it.
-
----
-
-## Project structure
+### AI Spending Coach
+Analyzes your transaction history and surfaces patterns you wouldn't notice manually.
 
 ```
-finance-dashboard.html   ← entire app in one file
-README.md
+→ You spent 18% more on food this month
+→ Your savings rate improved by 12% — keep it up
+→ You're on track to hit your Laptop Fund goal by March
 ```
 
-Everything is self-contained: HTML structure, CSS styles, and JavaScript logic in a single file. This was a deliberate choice to keep the submission simple to run and review.
+### Expense Prediction
+Uses historical data to forecast your next month's spending by category — food, transport, education, and more — with trend graphs and AI-backed recommendations.
+
+### Smart Budget Planner
+Input your income and expense categories (pocket money, rent, food, transport, education, entertainment). PayFi auto-generates a budget plan with daily spending limits, savings targets, and an emergency fund recommendation.
+
+### Savings Goals
+Create named goals — Laptop Fund, Emergency Fund, Travel, Higher Education — and track progress visually. The app tells you how much to save per day to hit your target on time.
+
+### Student Savings Challenges
+The hardest part of saving money is starting. PayFi gamifies it.
+
+Weekly challenges like *"No food delivery for 3 days"* or *"Save ₹500 this week"* — complete them, earn badges, build streaks.
+
+| Badge | Level |
+|-------|-------|
+| 🥉 Saver | Getting started |
+| 🥈 Smart Budgeter | Building consistency |
+| 🥇 Money Master | Strong discipline |
+| 🏆 Financial Champion | Elite savings habits |
+
+### Financial Health Center
+A composite score built from four pillars: Budget Adherence · Savings Consistency · Spending Discipline · Goal Progress. Gives you a single number that tells you how well you're managing your money — and exactly what to fix.
+
+### Transaction Management
+Add income and expenses, categorize by type, filter history, and get a breakdown of where your money actually went — not just how much you spent.
 
 ---
 
-## Tech decisions
+## Tech Stack
 
-**Vanilla JS instead of React/Vue** — The assignment said "no framework needed" and creativity in structure is what's being evaluated, not framework familiarity. Managing state with plain JS objects and localStorage keeps it simple, readable, and dependency-free.
-
-**localStorage for state** — Transactions persist across sessions without any backend. This demonstrates practical state management thinking.
-
-**CSS custom properties for theming** — The entire dark/light switch is handled by toggling one data attribute on the `<html>` element. Clean, zero-JS style switching.
-
-**Role simulation on the frontend** — Roles are stored in localStorage and applied on page load/switch. The UI adapts immediately — admin sees full controls, viewer sees none. This is exactly how a real RBAC frontend layer would work before a backend enforces permissions.
-
----
-
-## Assumptions made
-
-- Currency is INR (₹). Easy to swap out.
-- Seed data contains 20 realistic transactions across 3 months to make all charts meaningful from the start.
-- "Insights" section extracts patterns from existing data rather than requiring user input — this felt more useful.
-- The role toggle is intentionally simple and visible, since this is a demo for evaluation. In production, role would come from an auth token.
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React · TypeScript · Vite |
+| Styling | Tailwind CSS · Shadcn/UI · Lucide Icons |
+| Animations | Framer Motion |
+| Backend & DB | Supabase · PostgreSQL |
+| Auth | Supabase Auth · Google OAuth |
+| Charts | Recharts |
 
 ---
 
-## What I'd add with more time
+## App Architecture
 
-- Export transactions as CSV or JSON
-- Budget targets per category with visual progress
-- Date range picker for filtering
-- Recurring transaction flagging
-- Proper authentication layer with JWT
+```
+PayFi
+├── Auth Layer          → Email + Google OAuth via Supabase
+├── Dashboard           → Real-time financial overview
+├── Transactions        → Add, categorize, filter, analyze
+├── Goals               → Create & track savings targets
+├── Budget Planner      → Auto-generate personalized budgets
+├── AI Spending Coach   → Pattern detection & recommendations
+├── Expense Prediction  → Forecasting via historical data
+├── Savings Challenges  → Gamified streaks & badge system
+├── Analytics           → Spending trends & visual breakdowns
+├── Health Center       → Composite financial health score
+└── User Profile        → Settings & account management
+```
 
 ---
 
-Built by Pooja Dahiya
+## UI Highlights
+
+- Dark-themed fintech interface with emerald green accent palette
+- Glassmorphism auth screens with animated finance-themed illustrations
+- Skeleton loaders for seamless data fetching
+- Smooth page transitions via Framer Motion
+- Interactive Recharts graphs for all analytics
+- Fully protected routes with session management
+- Custom `P₹` logo identity
+
+---
+
+## Roadmap
+
+These are planned for the mobile app release:
+
+- [ ] SMS-based auto expense detection
+- [ ] UPI transaction insights
+- [ ] Bank account integration
+- [ ] Investment tracking
+- [ ] Subscription tracker & alerts
+- [ ] AI financial assistant (chat interface)
+- [ ] Personalized financial roadmaps
+
+---
+
+## Why I Built This
+
+I'm a CSE student managing a tight budget — and every expense tracker I tried was either too simple or too complex. PayFi is what I wished existed: something that actually *thinks* with you, not just stores data for you.
+
+It's also the project where I pushed myself to go full-stack — Supabase backend, real auth flow, data-driven AI coaching, chart-heavy analytics — all in a single, cohesive product.
+
+---
+
+## Developer
+
+**Pooja Dahiya**
+B.Tech Computer Science Engineering · Graphic Era Hill University · Batch 2023–2027
+
+Passionate about building products that solve real problems — not just writing code.
+
+[![GitHub](https://img.shields.io/badge/GitHub-poojadahiya22-181717?style=flat-square&logo=github)](https://github.com/poojadahiya22)
+[![Portfolio](https://pooja-portfoliooo.netlify.app/)
+
+---
+
+*If this project resonates with you, a ⭐ on GitHub goes a long way — thank you!*
