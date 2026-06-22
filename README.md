@@ -150,7 +150,7 @@ B.Tech Computer Science Engineering · Graphic Era Hill University · Batch 2023
 Passionate about building products that solve real problems — not just writing code.
 
 [![GitHub](https://img.shields.io/badge/GitHub-poojadahiya22-181717?style=flat-square&logo=github)](https://github.com/poojadahiya22)
-[![Portfolio](https://pooja-portfoliooo.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-1d9e75?style=flat-square&logo=netlify)](https://pooja-portfoliooo.netlify.app/)
 
 ---
 
